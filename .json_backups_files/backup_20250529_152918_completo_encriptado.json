@@ -1,0 +1,102 @@
+{
+    "backup": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "last_modified": "2025-03-20T21:08:35",
+                            "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/IMGTest/Target-Calibration-File.jpg",
+                            "size": 1650119,
+                            "type": "file"
+                        },
+                        {
+                            "last_modified": "2025-03-20T21:08:35",
+                            "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/IMGTest/about.md",
+                            "size": 1,
+                            "type": "file"
+                        },
+                        {
+                            "last_modified": "2025-03-20T21:08:35",
+                            "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/IMGTest/testImg01.jpg",
+                            "size": 2351282,
+                            "type": "file"
+                        },
+                        {
+                            "last_modified": "2025-03-20T21:08:35",
+                            "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/IMGTest/testImg1.jpg",
+                            "size": 1359189,
+                            "type": "file"
+                        }
+                    ],
+                    "last_modified": "2025-05-19T20:43:08",
+                    "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/IMGTest",
+                    "type": "directory"
+                },
+                {
+                    "last_modified": "2025-03-20T21:08:35",
+                    "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/Makefile",
+                    "size": 631,
+                    "type": "file"
+                },
+                {
+                    "last_modified": "2025-03-17T20:06:12",
+                    "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/buddy_allocator.cpp",
+                    "size": 1120,
+                    "type": "file"
+                },
+                {
+                    "last_modified": "2025-03-17T20:06:12",
+                    "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/buddy_allocator.h",
+                    "size": 622,
+                    "type": "file"
+                },
+                {
+                    "last_modified": "2025-03-17T20:06:12",
+                    "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/imagen.cpp",
+                    "size": 2525,
+                    "type": "file"
+                },
+                {
+                    "last_modified": "2025-05-26T23:12:48",
+                    "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/imagen.h",
+                    "size": 572,
+                    "type": "file"
+                },
+                {
+                    "last_modified": "2025-03-17T20:06:12",
+                    "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/main.cpp",
+                    "size": 3314,
+                    "type": "file"
+                },
+                {
+                    "last_modified": "2025-05-26T20:03:48",
+                    "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/readme.md",
+                    "size": 6765,
+                    "type": "file"
+                },
+                {
+                    "last_modified": "2025-03-17T20:06:12",
+                    "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/stb_image.h",
+                    "size": 283010,
+                    "type": "file"
+                },
+                {
+                    "last_modified": "2025-03-17T20:06:12",
+                    "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/stb_image_write.h",
+                    "size": 71221,
+                    "type": "file"
+                },
+                {
+                    "last_modified": "2025-03-17T20:06:12",
+                    "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/stb_wrapper.cpp",
+                    "size": 124,
+                    "type": "file"
+                }
+            ],
+            "last_modified": "2025-05-19T20:43:04",
+            "path": "file_system_example/SistemasOperativos/LlamadaSistema/Memoria/buddySystem/",
+            "type": "directory"
+        }
+    ]
+}

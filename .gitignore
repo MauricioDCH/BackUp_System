@@ -1,0 +1,9 @@
+.vscode/
+.init_backup_flag
+backupApp
+
+# Ignore all files in the includes/ignorar directory
+includes/ignorar/*
+
+# Ignore all files in the project directories terminate with .o
+*.o
