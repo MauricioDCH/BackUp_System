@@ -21,9 +21,8 @@
 #include "../includes/utils.h"
 #include <optional>
 #include <algorithm>
-
-#include <future> // Para std::async
-#include <execution> // C++17
+#include <future>
+#include <execution>
 
 
 using namespace std;

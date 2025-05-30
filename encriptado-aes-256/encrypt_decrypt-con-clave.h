@@ -73,5 +73,4 @@ class EncryptDecrypt {
          * @return false Si hubo un error durante el descifrado.
          */
         bool decrypt_file(const std::string& input_filename, const std::string& output_filename, const std::string& master_key_str);
-
 };

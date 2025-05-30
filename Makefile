@@ -2,7 +2,7 @@
 CXX = g++
 
 # Compilation flags
-CXXFLAGS = -Wall -std=c++20 -Iinclude -fopenmp
+CXXFLAGS = -Wall -std=c++17 -Iinclude -fopenmp
 
 # Libraries
 LDFLAGS = -lz -lssl -lcrypto -lpthread -ltbb
@@ -59,6 +59,7 @@ clean:
 clean-jsons-and-backup-files:
 	rm backup_files/* && rm .json_backups_files/* && rm recovered_files/* && rm recuperacion_files/*
 
+# Run initialization, reset, and status commands
 run-init:
 	./$(EXEC) --init
 
@@ -68,7 +69,10 @@ run-reset:
 run-status:
 	./$(EXEC) --status
 
+# Run backup and recovery commands with different configurations
 
+## Backup commands
+### Run backup with encryption and compression complete store: local.
 run-backup-encrypt-completo:
 	./$(EXEC) 	--modo backup \
 				--backupType completo \
@@ -80,6 +84,7 @@ run-backup-encrypt-completo:
 				--storage local \
 				--pathStorage backup_files
 
+### Run backup with encryption and compression complete store: cloud.
 run-backup-encrypt-completo-a-nube:
 	./$(EXEC) 	--modo backup \
 				--backupType completo \
@@ -91,6 +96,7 @@ run-backup-encrypt-completo-a-nube:
 				--storage nube \
 				--pathStorage 1xzKZwAjNphvftf5TtsrU5HhEfziYs316
 
+### Run backup with encryption and compression complete store: USB.
 run-backup-encrypt-completo-a-usb:
 	./$(EXEC) 	--modo backup \
 				--backupType completo \
@@ -102,7 +108,7 @@ run-backup-encrypt-completo-a-usb:
 				--storage usb \
 				--pathStorage /run/media/madacohe/USB_MAURO/BackUp
 
-
+### Run backup without encryption but compression complete store: local.
 run-backup-no-encrypt-completo:
 	./$(EXEC) 	--modo backup \
 				--backupType completo \
@@ -113,6 +119,7 @@ run-backup-no-encrypt-completo:
 				--storage local \
 				--pathStorage backup_files
 
+### Run backup with encryption and compression type: incremental store: local.
 run-backup-encrypt-incremental:
 	./$(EXEC) 	--modo backup \
 				--backupType incremental \
@@ -124,6 +131,7 @@ run-backup-encrypt-incremental:
 				--storage local \
 				--pathStorage backup_files
 
+### Run backup without encryption but compression type: incremental store: local.
 run-backup-no-encrypt-incremental:
 	./$(EXEC) 	--modo backup \
 				--backupType incremental \
@@ -134,6 +142,7 @@ run-backup-no-encrypt-incremental:
 				--storage local \
 				--pathStorage backup_files
 
+### Run backup with encryption and compression type: differential store: local.
 run-backup-encrypt-diferencial:
 	./$(EXEC) 	--modo backup \
 				--backupType diferencial \
@@ -145,6 +154,7 @@ run-backup-encrypt-diferencial:
 				--storage local \
 				--pathStorage backup_files
 
+### Run backup without encryption but compression type: differential store: local.
 run-backup-no-encrypt-diferencial:
 	./$(EXEC) 	--modo backup \
 				--backupType diferencial \
@@ -156,7 +166,7 @@ run-backup-no-encrypt-diferencial:
 				--pathStorage backup_files
 
 
-
+## Recover commands
 run-recuperacion-encrypt:
 	./$(EXEC) 	--modo recuperacion \
 				--flagEncryptDecrypt 1 \
@@ -165,6 +175,7 @@ run-recuperacion-encrypt:
 				--encryptedCompressedFile backup_files/comprimido_backup_20250529_152919_completo_encriptado.tar.enc.gz \
 				--pathStorage recuperacion_files
 
+### Run recovery with encryption and compression store: cloud.
 run-recuperacion-encrypt-a-nube:
 	./$(EXEC) 	--modo recuperacion \
 				--flagEncryptDecrypt 1 \
@@ -173,6 +184,7 @@ run-recuperacion-encrypt-a-nube:
 				--encryptedCompressedFile backup_files/comprimido_backup_20250529_152919_completo_encriptado.tar.enc.gz \
 				--pathStorage 1xzKZwAjNphvftf5TtsrU5HhEfziYs316
 
+### Run recovery with encryption and compression store: USB.
 run-recuperacion-encrypt-a-usb:
 	./$(EXEC) 	--modo recuperacion \
 				--flagEncryptDecrypt 1 \
@@ -181,6 +193,7 @@ run-recuperacion-encrypt-a-usb:
 				--encryptedCompressedFile backup_files/comprimido_backup_20250529_152919_completo_encriptado.tar.enc.gz \
 				--pathStorage /run/media/madacohe/USB_MAURO/BackUp
 
+### Run recovery without encryption but compression store: local.
 run-recuperacion-no-encrypt:
 	./$(EXEC) 	--modo recuperacion \
 				--flagEncryptDecrypt 0 \

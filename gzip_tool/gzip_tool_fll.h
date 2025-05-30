@@ -27,8 +27,6 @@
 #include "../includes/utils.h"
 #include "../encriptado-aes-256/encrypt_decrypt-con-clave.h"
 
-#include <future>
-#include <mutex>
 #include <omp.h>
 
 namespace fs = std::filesystem;
